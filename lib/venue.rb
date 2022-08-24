@@ -17,7 +17,7 @@ class Venue
   end
 
   def over_capacity
-    if @patrons.count > 4
+    if @patrons.count > @capacity
       true
     else
       false
@@ -25,7 +25,7 @@ class Venue
   end
 
   # def kick_out
-  #   if @patrons.count > 4
+  #   if @over_capacity = true
   #     @patrons.pop
   #   end
   # end
